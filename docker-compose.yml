@@ -1,0 +1,7 @@
+version: '3'
+services:
+  api:
+    build: .
+    container_name: api_trapp
+    ports:
+      - "3000:3000"
