@@ -1,6 +1,8 @@
 import Express from 'express';
 import cors from 'cors';
+import { config } from 'dotenv';
 import salesRouter from './routers/salesRouter.js';
+config();
 
 const app = Express();
 
