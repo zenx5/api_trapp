@@ -8,10 +8,10 @@ const app = Express();
 
 // usar cors
 app.use(cors());
-app.use('/admin/sales', salesRouter)
+app.use('/api/admin/sales', salesRouter)
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hi, World!');
 });
 
 

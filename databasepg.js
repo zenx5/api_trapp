@@ -27,6 +27,7 @@ const query = (sql, callback) => {
         }
         callback( result.rows );
     })
+    client.end;
 }
 
 export default query;

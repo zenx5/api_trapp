@@ -3,5 +3,7 @@ services:
   api:
     build: .
     container_name: api_trapp
+    volumes:
+      - ./:/app
     ports:
-      - "3000:3000"
+      - "4000:3000"
