@@ -1,7 +1,7 @@
 // https://api.trodapp.com/api/admin/sales/
 
 import { Router } from "express";
-import { currentMonthSales, generalSales, quarterSales, weekSales, yearSales } from "../services/serviceRouter.js";
+import { currentMonthSales, generalSales, quarterSales, weekSales, yearSales } from "../services/saleService.js";
 
 const salesRouter = Router();
 
