@@ -5,5 +5,13 @@ services:
     container_name: api_trapp
     volumes:
       - ./:/app
+
+  https-portal:
+    image: steveltn/https-portal:1
     ports:
-      - "80:3000"
+      - 80:80
+      - 443:443
+    restart: always
+    environment:
+      DOMAINS: '127.0.0.1 -> http://api:3000'
+      STAGE: 'local'
